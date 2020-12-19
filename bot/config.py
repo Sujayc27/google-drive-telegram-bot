@@ -1,10 +1,10 @@
 class config:
-    BOT_TOKEN = ""
-    APP_ID = ""
-    API_HASH = ""
-    DATABASE_URL = ""
-    SUDO_USERS = "" # Sepearted by space.
-    SUPPORT_CHAT_LINK = ""
+    BOT_TOKEN = "1371023824:AAHsJG_Kn4NLH3vnQEEPe30iCDQOX649Z-Y"
+    APP_ID = "2648704"
+    API_HASH = "b03c6310e8ae08653f8a456ef2e140bd"
+    DATABASE_URL = "postgres://ppdjzepjrwnpyn:db8aa8afcc69c689d71aa716eb1ca3b0a35aa0f3f6040ae1d5d1de320654598c@ec2-3-218-123-191.compute-1.amazonaws.com:5432/d4a9o9i31jtg86"
+    SUDO_USERS = "992092721" # Sepearted by space.
+    SUPPORT_CHAT_LINK = "@LionsDrive"
     DOWNLOAD_DIRECTORY = "./downloads/"
 
 
