@@ -4,7 +4,7 @@ class config:
     API_HASH = "b03c6310e8ae08653f8a456ef2e140bd"
     DATABASE_URL = "postgres://ppdjzepjrwnpyn:db8aa8afcc69c689d71aa716eb1ca3b0a35aa0f3f6040ae1d5d1de320654598c@ec2-3-218-123-191.compute-1.amazonaws.com:5432/d4a9o9i31jtg86"
     SUDO_USERS = "992092721" # Sepearted by space.
-    SUPPORT_CHAT_LINK = "@LionsDrive"
+    SUPPORT_CHAT_LINK = "https://t.me/joinchat/OyIiMRuFdhS22jIp-SgWUA"
     DOWNLOAD_DIRECTORY = "./downloads/"
 
 
