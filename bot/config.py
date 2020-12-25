@@ -1,9 +1,9 @@
-BOT_TOKEN = "1420217635:AAG2LCfLdoBZ_5FV7XCQDaU6Nt1YRRTsAv4"
-    APP_ID = "2648704"
+BOT_TOKEN = "1404442781:AAHB38PRRz5sjh_ok7sMpq21vOsnogLTv6M"
+    APP_ID = "2648704",
     API_HASH = "b03c6310e8ae08653f8a456ef2e140bd"
-    DATABASE_URL = "postgres://qwcayupedeyqlx:77b6e2a9fbce32079d0d7b7ba2b34f87dfb1049160f8f2eed41696c1a61595ca@ec2-34-204-121-199.compute-1.amazonaws.com:5432/daiapiji79g3jc"
+    DATABASE_URL = "postgres://wupgiaohofqlzf:401b948a58f898eac8b5d675726673d07d5b6edabc0230df60416ab9d64fbe91@ec2-3-224-38-18.compute-1.amazonaws.com:5432/d9d951ciernms0"
     SUDO_USERS = "992092721" # Sepearted by space.
-    SUPPORT_CHAT_LINK = "https://t.me/joinchat/OyIiMRuFdhS22jIp-SgWUA"
+    SUPPORT_CHAT_LINK = "https://t.me/joinchat/VYdK9Wy2ibxlPn8l,"
     DOWNLOAD_DIRECTORY = "./downloads/"
 
 
