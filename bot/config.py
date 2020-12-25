@@ -1,9 +1,10 @@
-BOT_TOKEN = "1404442781:AAHB38PRRz5sjh_ok7sMpq21vOsnogLTv6M"
-    APP_ID = "2648704",
+class config:
+    BOT_TOKEN = "1496739328:AAG3_NiYwhR_8dEtvchnIORikRGF2H4zMMo"
+    APP_ID = "2648704"
     API_HASH = "b03c6310e8ae08653f8a456ef2e140bd"
-    DATABASE_URL = "postgres://wupgiaohofqlzf:401b948a58f898eac8b5d675726673d07d5b6edabc0230df60416ab9d64fbe91@ec2-3-224-38-18.compute-1.amazonaws.com:5432/d9d951ciernms0"
+    DATABASE_URL = "postgres://zfcpeldnotwmfd:6b85f3d80086433f782616827813ebe63daa4f1a75bb56a3289742921d6b6e20@ec2-54-235-116-235.compute-1.amazonaws.com:5432/d7sco43nrdqkah"
     SUDO_USERS = "992092721" # Sepearted by space.
-    SUPPORT_CHAT_LINK = "https://t.me/joinchat/VYdK9Wy2ibxlPn8l,"
+    SUPPORT_CHAT_LINK = "https://t.me/joinchat/VYdK9Wy2ibxlPn8l"
     DOWNLOAD_DIRECTORY = "./downloads/"
 
 
@@ -26,11 +27,9 @@ class Messages:
         
         f"**Authenticating Google Drive**\n__Send the /{BotCommands.Authorize[0]} commmand and you will receive a URL, visit URL and follow the steps and send the received code here. Use /{BotCommands.Revoke[0]} to revoke your currently logged Google Drive Account.__\n\n**Note: I will not listen to any command or message (except /{BotCommands.Authorize[0]} command) until you authorize me.\nSo, Authorization is mandatory !**",
         
-        f"**Direct Links**\n__Send me a direct download link for a file and i will download it on my server and Upload it to your Google Drive Account. You can rename files before uploading to GDrive Account. Just send me the URL and new filename separated by ' | '.__\n\n**__Examples:__**\n
-https://example.com/AFileWithDirectDownloadLink.mkv | New FileName.mkv
-\n\n**Telegram Files**\n__To Upload telegram files in your Google drive Account just send me the file and i will download and upload it to your Google Drive Account. Note: Telegram Files Downloading are slow. it may take longer for big files.__\n\n**YouTube-DL Support**\n__Download files via youtube-dl.\nUse /{BotCommands.Ytdl[0]} (YouTube Link/YouTube-DL Supported site link)__",
+        f"**Direct Links**\n__Send me a direct download link for a file and i will download it on my server and Upload it to your Google Drive Account. You can rename files before uploading to GDrive Account. Just send me the URL and new filename separated by ' | '.__\n\n**__Examples:__**\n```https://example.com/AFileWithDirectDownloadLink.mkv | New FileName.mkv```\n\n**Telegram Files**\n__To Upload telegram files in your Google drive Account just send me the file and i will download and upload it to your Google Drive Account. Note: Telegram Files Downloading are slow. it may take longer for big files.__\n\n**YouTube-DL Support**\n__Download files via youtube-dl.\nUse /{BotCommands.Ytdl[0]} (YouTube Link/YouTube-DL Supported site link)__",
         
-        f"**Custom Folder for Upload**\n__Want to upload in custom folder or in__ TeamDrive  ?\nUse /{BotCommands.SetFolder[0]} (Folder URL) to set custom upload folder.\nAll the files are uploaded in the custom folder you provide.",
+        f"**Custom Folder for Upload**\n__Want to upload in custom folder or in__ **TeamDrive** __ ?\nUse /{BotCommands.SetFolder[0]} (Folder URL) to set custom upload folder.\nAll the files are uploaded in the custom folder you provide.__",
         
         f"**Delete Google Drive Files**\n__Delete google drive files. Use /{BotCommands.Delete[0]} (File/Folder URL) to delete file.\nYou can also empty trash files use /{BotCommands.EmptyTrash[0]}\nNote: Files are deleted permanently. This process cannot be undone.\n\n**Copy Google Drive Files**\n__Yes, Clone or Copy Google Drive Files.\n__Use /{BotCommands.Clone[0]} (File id / Folder id or URL) to copy Google Drive Files in your Google Drive Account.__",
         
@@ -40,75 +39,55 @@ https://example.com/AFileWithDirectDownloadLink.mkv | New FileName.mkv
         "**Developed by @viperadnan**"
         ]
      
-    RATE_LIMIT_EXCEEDED_MESSAGE = "❗ Rate Limit Exceeded.\n__User rate limit exceeded try after 24 hours.__"
+    RATE_LIMIT_EXCEEDED_MESSAGE = "❗ **Rate Limit Exceeded.**\n__User rate limit exceeded try after 24 hours.__"
     
-    FILE_NOT_FOUND_MESSAGE = "❗ File/Folder not found.\n__File id - {} Not found. Make sure it\'s exists and accessible by the logged account.__"
+    FILE_NOT_FOUND_MESSAGE = "❗ **File/Folder not found.**\n__File id - {} Not found. Make sure it\'s exists and accessible by the logged account.__"
     
-    INVALID_GDRIVE_URL = "❗ Invalid Google Drive URL\nMake sure the Google Drive URL is in valid format."
+    INVALID_GDRIVE_URL = "❗ **Invalid Google Drive URL**\nMake sure the Google Drive URL is in valid format."
     
-    COPIED_SUCCESSFULLY = "✅ Copied successfully.\n[
-
-{}]({}) ({})"
+    COPIED_SUCCESSFULLY = "✅ **Copied successfully.**\n[{}]({}) __({})__"
     
-    NOT_AUTH = f"🔑 You have not authenticated me to upload to any account.\n__Send /{BotCommands.Authorize[0]} to authenticate.__"
+    NOT_AUTH = f"🔑 **You have not authenticated me to upload to any account.**\n__Send /{BotCommands.Authorize[0]} to authenticate.__"
     
-    DOWNLOADED_SUCCESSFULLY = "📤 Uploading File...\n**Filename:**
-{}
-\n**Size:**
-{}
-"
+    DOWNLOADED_SUCCESSFULLY = "📤 **Uploading File...**\n**Filename:** ```{}```\n**Size:** ```{}```"
     
-    UPLOADED_SUCCESSFULLY = "✅ Uploaded Successfully.\n[{}]({}) ({})"
+    UPLOADED_SUCCESSFULLY = "✅ **Uploaded Successfully.**\n[{}]({}) __({})__"
     
     DOWNLOAD_ERROR = "❗**Downloader Failed**\n{}\n__Link - {}__"
     
-    DOWNLOADING = "📥 Downloading File...\nLink:
-{}
-"
+    DOWNLOADING = "📥 **Downloading File...\nLink:** ```{}```"
     
-    ALREADY_AUTH = "🔒 Already authorized your Google Drive Account.\n__Use /revoke to revoke the current account.__\n__Send me a direct link or File to Upload on Google Drive__"
+    ALREADY_AUTH = "🔒 **Already authorized your Google Drive Account.**\n__Use /revoke to revoke the current account.__\n__Send me a direct link or File to Upload on Google Drive__"
     
-    FLOW_IS_NONE = f"❗ Invalid Code\n__Run {BotCommands.Authorize[0]} first.__"
+    FLOW_IS_NONE = f"❗ **Invalid Code**\n__Run {BotCommands.Authorize[0]} first.__"
     
-    AUTH_SUCCESSFULLY = '🔐 Authorized Google Drive account Successfully.'
+    AUTH_SUCCESSFULLY = '🔐 **Authorized Google Drive account Successfully.**'
     
-    INVALID_AUTH_CODE = '❗ Invalid Code\n__The code you have sent is invalid or already used before. Generate new one by the Authorization URL__'
+    INVALID_AUTH_CODE = '❗ **Invalid Code**\n__The code you have sent is invalid or already used before. Generate new one by the Authorization URL__'
     
-    AUTH_TEXT = "⛓️ To Authorize your Google Drive account visit this [URL]({}) and send the generated code here.\n__Visit the URL > Allow permissions > you will get a code > copy it > Send it here__"
+    AUTH_TEXT = "⛓️ **To Authorize your Google Drive account visit this [URL]({}) and send the generated code here.**\n__Visit the URL > Allow permissions > you will get a code > copy it > Send it here__"
     
-    DOWNLOAD_TG_FILE = "📥 Downloading File...\n**Filename:**
-{}
-\n**Size:**
-{}
-\n**MimeType:**
-{}
-"
+    DOWNLOAD_TG_FILE = "📥 **Downloading File...**\n**Filename:** ```{}```\n**Size:** ```{}```\n**MimeType:** ```{}```"
     
-    PARENT_SET_SUCCESS = '🆔✅ Custom Folder link set successfully.\n__Your custom folder id - {}\nUse__
-/{} clear
-to clear it.'
+    PARENT_SET_SUCCESS = '🆔✅ **Custom Folder link set successfully.**\n__Your custom folder id - {}\nUse__ ```/{} clear``` __to clear it.__'
     
-    PARENT_CLEAR_SUCCESS = f'🆔🚮 Custom Folder ID Cleared Successfuly.\n__Use__
-/{BotCommands.SetFolder[0]} (Folder Link)
-to set it back.'
+    PARENT_CLEAR_SUCCESS = f'🆔🚮 **Custom Folder ID Cleared Successfuly.**\n__Use__ ```/{BotCommands.SetFolder[0]} (Folder Link)``` __to set it back__.'
     
-    CURRENT_PARENT = "🆔 Your Current Custom Folder ID - {}\n__Use__
-/{} (Folder link)
-to change it."
+    CURRENT_PARENT = "🆔 **Your Current Custom Folder ID - {}**\n__Use__ ```/{} (Folder link)``` __to change it.__"
     
-    REVOKED = f"🔓 Revoked current logged account successfully.\n__Use /{BotCommands.Authorize[0]} to authenticate again and use this bot.__"
+    REVOKED = f"🔓 **Revoked current logged account successfully.**\n__Use /{BotCommands.Authorize[0]} to authenticate again and use this bot.__"
     
-    NOT_FOLDER_LINK = "❗ Invalid folder link.\n__The link you send its not belong to a folder.__"
+    NOT_FOLDER_LINK = "❗ **Invalid folder link.**\n__The link you send its not belong to a folder.__"
     
-    CLONING = "🗂️ Cloning into Google Drive...\n__G-Drive Link - {}__"
+    CLONING = "🗂️ **Cloning into Google Drive...**\n__G-Drive Link - {}__"
     
     PROVIDE_GDRIVE_URL = "**❗ Provide a valid Google Drive URL along with commmand.**\n__Usage - /{} (GDrive Link)__"
     
-    INSUFFICIENT_PERMISSONS = "❗ You have insufficient permissions for this file.\n__File id - {}__"
+    INSUFFICIENT_PERMISSONS = "❗ **You have insufficient permissions for this file.**\n__File id - {}__"
     
-    DELETED_SUCCESSFULLY = "🗑️✅ File Deleted Successfully.\n__File deleted permanently !\nFile id - {}__"
+    DELETED_SUCCESSFULLY = "🗑️✅ **File Deleted Successfully.**\n__File deleted permanently !\nFile id - {}__"
     
-    WENT_WRONG = "⁉️ ERROR: SOMETHING WENT WRONG\n__Please try again later.__"
+    WENT_WRONG = "⁉️ **ERROR: SOMETHING WENT WRONG**\n__Please try again later.__"
     
     EMPTY_TRASH = "🗑️🚮**Trash Emptied Successfully !**"
     
